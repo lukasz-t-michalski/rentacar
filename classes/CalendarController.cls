@@ -1,9 +1,10 @@
 public class CalendarController {
 	
+	//newComment
     @AuraEnabled
     public static Vehicle__c getVehicle() {
         
-        return [SELECT Id, Name, Brand__c, Image__c, Price__c from Vehicle__c LIMIT 1];
+        return [SELECT Id, Name, Brand__c, Image__c, Price__c from Vehicle__c LIMIT 2];
     }
     
     @AuraEnabled
